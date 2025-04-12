@@ -1,4 +1,4 @@
-import { type Hole, html } from '../lib/view'
+import { type Hole, html } from "../lib/view";
 
 export function shell({ title, content }: { title: string; content: Hole }) {
   return html`<html>
@@ -9,5 +9,5 @@ export function shell({ title, content }: { title: string; content: Hole }) {
     <body>
       ${content}
     </body>
-  </html>`
+  </html>`;
 }

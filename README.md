@@ -19,3 +19,16 @@ npm install
 npm run dev
 # Navigate to http://localhost:8080
 ```
+
+
+To run the rust client example you will need 2 bsky accounts, fetch a token by logging in and pass them both along with their DIDs as well as the message you want to upload: 
+
+```sh
+cd client
+cargo run -- \
+"<cookie_alice>" \ 
+"<did_alice>" \
+"<cookie_bob>" \
+"<did_bob>" \
+"Hello (private) world"
+```
